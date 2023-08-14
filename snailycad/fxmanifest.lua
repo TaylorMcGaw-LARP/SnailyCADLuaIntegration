@@ -1,0 +1,31 @@
+fx_version 'bodacious'
+games {'gta5'}
+
+author 'snaily CAD'
+description 'snaily CAD FiveM Integration'
+version '2.4.0'
+
+server_scripts {
+    'core/http.js'
+    ,'core/unzipper/unzip.js'
+    ,'core/logging.lua'
+    ,'core/shared_functions.lua'
+    ,'core/configuration.lua'
+    ,'config.lua'
+    ,'core/server.lua'
+    ,'core/commands.lua'
+    ,'core/httpd.lua'
+    ,'core/updater.lua'
+    ,'plugins/**/config_*.lua'
+    ,'plugins/**/sv_*.lua'
+    ,'plugins/**/sv_*.js'
+    ,'core/plugin_loader.lua'
+               }
+client_scripts {
+    'core/logging.lua'
+    ,'core/shared_functions.lua'
+    ,'core/client.lua'
+    ,'plugins/**/config_*.lua'
+    ,'plugins/**/cl_*.lua'
+    ,'plugins/**/cl_*.js'
+} 
