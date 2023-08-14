@@ -7,3 +7,6 @@
 [submodule "snailycad/plugins/locations"]
 	path = snailycad/plugins/locations
 	url = https://github.com/TaylorMcGaw-LARP/snaily_locations
+[submodule "snailycad/plugins/trafficstop"]
+	path = snailycad/plugins/trafficstop
+	url = https://github.com/TaylorMcGaw-LARP/snaily_trafficstop

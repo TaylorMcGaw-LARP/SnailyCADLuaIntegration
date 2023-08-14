@@ -1,0 +1,13 @@
+{
+    "apiUrl": "https://cad-api.liveactionrp.com/v1",
+    "apiKey": "ZwPRmEC_766pPWuDRHld2ktoc94E9dgyMEalATYL5UCbwOsdoLnn-lMn",
+    "mode": "production",
+    "postTime": 5000,
+    "primaryIdentifier": "steam",
+    "apiSendEnabled": true,
+    "debugMode": false,
+    "updateBranch": "master",
+    "allowAutoUpdate": true,
+    "autoUpdateUrl": "https://raw.githubusercontent.com/snaily-Software/snailyCADLuaIntegration/{branch}/snailycad/version.json",
+    "allowUpdateWithPlayers": false
+}
