@@ -1,0 +1,9 @@
+[submodule "snailycad/plugins/callcommands"]
+	path = snailycad/plugins/callcommands
+	url = https://github.com/TaylorMcGaw-LARP/snaily_callcommands
+[submodule "snailycad/plugins/postals"]
+	path = snailycad/plugins/postals
+	url = https://github.com/TaylorMcGaw-LARP/snaily_postals
+[submodule "snailycad/plugins/locations"]
+	path = snailycad/plugins/locations
+	url = https://github.com/TaylorMcGaw-LARP/snaily_locations
