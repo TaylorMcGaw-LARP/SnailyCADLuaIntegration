@@ -68,11 +68,11 @@ function CheckForPluginUpdate(name, checkUrl)
     end
     print(names)
     PerformHttpRequest(plugin.check_url, function(code, data, headers)
-        
+        if code == 200 then
             local remote = json.decode(data)
             if remote == nil then
-                warnLog(("Failed to get a valid response for %s. Skipping."):format(k))
-                debugLog(("Raw output for %s: %s"):format(k, data))
+                warnLog(("Failed to get a valid response for %s. Skipping."):format(name))
+                debugLog(("Raw output for %s: %s"):format(name, data))
             else
                 Config.plugins[name].latestVersion = remote.version
                 Config.plugins[name].download_url = remote.download_url

@@ -368,3 +368,12 @@ sonoranradio/dist/bundle.js
 sonoranradio/dist/bundle.css
 sonoranradio/data/vehicles.meta
 sonoranradio/data/carvariations.meta
+cad_tablet/shared/bundle.js
+cad_tablet/server/bundle.js
+cad_tablet/nui/styles/scss/style.scss
+cad_tablet/nui/styles/css/style.min.css
+cad_tablet/nui/scripts/script.js
+cad_tablet/nui/scripts/jsconfig.json
+cad_tablet/nui/index.html
+cad_tablet/fxmanifest.lua
+cad_tablet/client/bundle.js
