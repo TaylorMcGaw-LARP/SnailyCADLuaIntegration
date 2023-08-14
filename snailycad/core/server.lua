@@ -22,17 +22,10 @@ end)
 
 
 
-function performApiRequest(payload, endpoint, type,head, cb)
+function performApiRequest(payload, endpoint,dispatch, cb)
     -- apply required headers 
 
     local url = ""
-    local header = head
-  if header == '' or header == nil then
-headers = ''
-  else
-    headers = ',["'..header..'"] = true'
-  end
-  print(headers)
 
         apiUrl = Config.apiUrl
         url = apiUrl..'/'..tostring(endpoint)
@@ -45,7 +38,7 @@ headers = ''
     end
 
         PerformHttpRequestS(url, function(statusCode, res, headers)
-            debugLog(("type %s called with post data %s to url %s"):format(type, json.encode(payload), url))
+            warnLog(("type %s called with data %s to url %s"):format(type, json.encode(payload), url))
             if statusCode == 200 and res ~= nil then
                 debugLog("result: "..tostring(res))
                 cb(res, true)
@@ -58,11 +51,43 @@ headers = ''
                 errorLog(("CAD API ERROR (from %s): %s %s"):format(url, statusCode, res))
             end
           
-        end, type, json.encode(payload), {["Content-Type"]="application/json",["snaily-cad-api-token"]=Config.apiKey..''..headers})
+        end, 'POST', json.encode(payload), {["Content-Type"]="application/json",["snaily-cad-api-token"]=Config.apiKey,["is-from-dispatch"] =dispatch})
   
     
 end
+function performApiGETRequest( endpoint,dispatch, cb)
+    -- apply required headers 
 
+    local url = ""
+
+        apiUrl = Config.apiUrl
+        url = apiUrl..'/'..tostring(endpoint)
+    if Config.critError then
+        return
+    elseif not Config.apiSendEnabled then
+        warnLog("API sending is disabled, ignoring request.")
+        return
+    end
+
+    PerformHttpRequest(url, function(statusCode, res, headers)
+        warnLog(("type %s called with data %s to url %s"):format(type, json.encode(payload), url))
+        if statusCode == 200 and res ~= nil then
+            debugLog("result: "..tostring(res))
+            cb(res, true)
+        elseif statusCode == 400 then
+            warnLog("Bad request was sent to the API. Enable debug mode and retry your request. Response: "..tostring(res))
+        elseif statusCode == 404 then -- handle 404 requests, like from CHECK_APIID
+            debugLog("404 response found")
+            cb(res, false)
+        else
+            errorLog(("CAD API ERROR (from %s): %s %s"):format(url, statusCode, res))
+        end
+      
+    end, 'GET',nil, {["Content-Type"]="application/json",["snaily-cad-api-token"]=Config.apiKey})
+
+  
+    
+end
 if Config.devHiddenSwitch then
     RegisterCommand("cc", function()
         TriggerClientEvent("chat:clear", -1)
