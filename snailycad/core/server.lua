@@ -22,11 +22,16 @@ end)
 
 
 
-function performApiRequest(payload, endpoint, type, cb)
+function performApiRequest(payload, endpoint, type,header, cb)
     -- apply required headers 
 
     local url = ""
-  
+  if header == '' then
+headers = {["Content-Type"]="application/json",["snaily-cad-api-token"]=Config.apiKey}
+  else
+    headers = {["Content-Type"]="application/json",["snaily-cad-api-token"]=Config.apiKey,[header] = true}
+  end
+
         apiUrl = Config.apiUrl
         url = apiUrl..'/'..tostring(endpoint)
   
@@ -51,7 +56,7 @@ function performApiRequest(payload, endpoint, type, cb)
                 errorLog(("CAD API ERROR (from %s): %s %s"):format(url, statusCode, res))
             end
           
-        end, type, json.encode(payload), {["Content-Type"]="application/json",["snaily-cad-api-token"]=Config.apiKey})
+        end, type, json.encode(payload), {headers})
   
     
 end
