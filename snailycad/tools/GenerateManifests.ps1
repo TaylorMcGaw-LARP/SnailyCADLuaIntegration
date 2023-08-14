@@ -1,39 +1,27 @@
-﻿Push-Location ../
-Get-ChildItem -Recurse -Directory -Path * -Exclude ".github", "workflows" -Depth 1 | ForEach-Object {
-    if ($_.Name -eq "core") {
-        $hashes = @{}
-        Write-Host $_
-        gci -LiteralPath "$_/" -Depth 2 | ForEach-Object {
-            $hash = Get-FileHash -LiteralPath $_.FullName -Algorithm MD5
-            $hashes.Add($_.Name, $hash.Hash)
-        }
-        $output = $hashes | ConvertTo-Json
-        [System.IO.File]::WriteAllLines("../manifest.json", $output)
-    }
-    elseif ($_.Name -eq "plugins") {
-    
-        gci -LiteralPath $_ -Exclude ".github" -Directory | ForEach-Object {
-            Write-Host "Plugin: $_"
-            $hashes = @{}
-            # Begin Plugin
+﻿# Pointless for end-users, supplied in case someone else needs to build a release.
 
-            gci -LiteralPath $_.FullName -Exclude ".gitignore" -Recurse | ForEach-Object {
-                if ($_ -notlike "*main.yml" -and $_ -notlike ".git*" -and $_ -like "*.*") {
-                    Write-Host "File: $_"
-                    $hash = Get-FileHash -LiteralPath $_.FullName -Algorithm MD5
-                    if ($hash) {
-                        Write-Host "Name: $_"
-                        $hashes.Add($_.Name, $hash.Hash)
-                    }
-                }
-            }
-            # Done, print out
-            $path = Join-Path -Path $_.FullName -ChildPath "$_/manifest.json"
-            $output = $hashes | ConvertTo-Json
-            [System.IO.File]::WriteAllLines($path, $output)
+# Place into folder above your [sonorancad] before running. Requires 7-zip to be installed.
 
-        }
-    }
+$ReleaseVersion = Read-Host "Enter version to create"
+
+$ResourcePath = "G:\git\sonoranplugins\server\resources\[sonorancad]"
+$WorkPath = $PSScriptRoot + "\release\[sonorancad]"
+
+Write-Host $ResourcePath
+Write-Host $WorkPath
+
+Robocopy.exe $ResourcePath $WorkPath /s /MIR /XD plugins .git .vscode /XF config.json config_*.lua .gitignore config.js config.lua *.ydr *.ytyp
+New-Item -ItemType Directory "$WorkPath\sonorancad\plugins" -ErrorAction Ignore
+Robocopy.exe "$ResourcePath\sonorancad\plugins\template" "$WorkPath\sonorancad\plugins\template" /s
+
+Remove-Item "$PSScriptRoot\sonorancad-$ReleaseVersion.zip"
+
+$7zipPath = "$env:ProgramFiles\7-Zip\7z.exe"
+
+if (-not (Test-Path -Path $7zipPath -PathType Leaf)) {
+    throw "7 zip file '$7zipPath' not found"
 }
 
-Pop-Location
+Set-Alias 7zip $7zipPath
+
+7zip a -mx=9 "$PSScriptRoot\sonorancad-$ReleaseVersion.zip" $WorkPath
