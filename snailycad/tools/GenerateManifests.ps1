@@ -4,15 +4,13 @@
 
 $ReleaseVersion = Read-Host "Enter version to create"
 
-$ResourcePath = "G:\git\sonoranplugins\server\resources\[sonorancad]"
-$WorkPath = $PSScriptRoot + "\release\[sonorancad]"
+$ResourcePath = "C:\Users\taylo\Desktop\github\SnailyCADLuaIntegration"
+$WorkPath = "C:\Users\taylo\Desktop\github\release\[snailycad]"
 
-Write-Host $ResourcePath
-Write-Host $WorkPath
 
-Robocopy.exe $ResourcePath $WorkPath /s /MIR /XD plugins .git .vscode /XF config.json config_*.lua .gitignore config.js config.lua *.ydr *.ytyp
-New-Item -ItemType Directory "$WorkPath\sonorancad\plugins" -ErrorAction Ignore
-Robocopy.exe "$ResourcePath\sonorancad\plugins\template" "$WorkPath\sonorancad\plugins\template" /s
+Robocopy.exe C:\Users\taylo\Desktop\github\SnailyCADLuaIntegration C:\Users\taylo\Desktop\github\release\[snailycad] /s /MIR /XD plugins .git .vscode /XF config.json config_*.lua .gitignore config.js config.lua *.ydr *.ytyp
+New-Item -ItemType Directory "C:\Users\taylo\Desktop\github\release\[snailycad]\snailycad\plugins" -ErrorAction Ignore
+Robocopy.exe "C:\Users\taylo\Desktop\github\SnailyCADLuaIntegration\snailycad\plugins\template" "C:\Users\taylo\Desktop\github\release\[snailycad]\snailycad\plugins\template" /s
 
 Remove-Item "$PSScriptRoot\sonorancad-$ReleaseVersion.zip"
 

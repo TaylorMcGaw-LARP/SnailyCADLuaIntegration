@@ -10,3 +10,6 @@
 [submodule "snailycad/plugins/trafficstop"]
 	path = snailycad/plugins/trafficstop
 	url = https://github.com/TaylorMcGaw-LARP/snaily_trafficstop
+[submodule "snailycad/plugins/wraithv2"]
+	path = snailycad/plugins/wraithv2
+	url = https://github.com/TaylorMcGaw-LARP/snaily_wraithv2
