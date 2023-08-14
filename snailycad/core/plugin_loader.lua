@@ -1,5 +1,5 @@
 --[[
-    SonoranCAD FiveM Integration
+    snailyCAD FiveM Integration
 
     Plugin Loader
 
@@ -29,11 +29,11 @@ local function doRestart()
             return
         end
         warnLog("Auto-restarting...")
-        local f = assert(io.open(GetResourcePath("sonoran_updatehelper").."/run.lock", "w+"))
+        local f = assert(io.open(GetResourcePath("snaily_updatehelper").."/run.lock", "w+"))
         f:write("plugin")
         f:close()
         Wait(5000)
-        ExecuteCommand("ensure sonoran_updatehelper")
+        ExecuteCommand("ensure snaily_updatehelper")
     end)
 end
 
@@ -71,8 +71,8 @@ function CheckForPluginUpdate(name, checkUrl)
         
             local remote = json.decode(data)
             if remote == nil then
-                warnLog(("Failed to get a valid response for %s. Skipping."):format(k))
-                debugLog(("Raw output for %s: %s"):format(k, data))
+                warnLog(("Failed to get a valid response for %s. Skipping."):format(name))
+                debugLog(("Raw output for %s: %s"):format(name, data))
             else
                 Config.plugins[name].latestVersion = remote.version
                 Config.plugins[name].download_url = remote.download_url
@@ -99,7 +99,7 @@ function CheckForPluginUpdate(name, checkUrl)
             end
             
         else
-            errorLog(("Failed to check plugin updates for %s: %s %s"):format(plugin.check_url, code, data))
+            errorLog(("Failed to check plugin updates for %s: %s %s"):format(name, code, data))
         end
     end, "GET")
 end
@@ -132,7 +132,7 @@ CreateThread(function()
                 local minVersion = string.gsub(version.minCoreVersion, "%.","")
                 local coreVersion = string.gsub(coreVersion, "%.", "")
                 if minVersion > coreVersion then
-                    errorLog(("PLUGIN ERROR: Plugin %s requires Core Version %s, but you have %s. Please update SonoranCAD to use this plugin. Force disabled."):format(k, version.minCoreVersion, coreVersion))
+                    errorLog(("PLUGIN ERROR: Plugin %s requires Core Version %s, but you have %s. Please update snailyCAD to use this plugin. Force disabled."):format(k, version.minCoreVersion, coreVersion))
                     Config.plugins[k].enabled = false
                 end
             end

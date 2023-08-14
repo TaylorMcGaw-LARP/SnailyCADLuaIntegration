@@ -5,7 +5,7 @@ end
 
 local function sendConsole(level, color, message)
     local time = os and os.date("%X") or LocalTime()
-    print(("[%s][SonoranCAD:%s%s^7]%s %s^0"):format(time, color, level, color, message))
+    print(("[%s][snailyCAD:%s%s^7]%s %s^0"):format(time, color, level, color, message))
 end
 
 function debugLog(message)
@@ -32,8 +32,8 @@ function infoLog(message)
     sendConsole("INFO", "^5", message)
 end
 
---RegisterServerEvent("SonoranCAD::core:writeLog")
-AddEventHandler("SonoranCAD::core:writeLog", function(level, message)
+--RegisterServerEvent("snailyCAD::core:writeLog")
+AddEventHandler("snailyCAD::core:writeLog", function(level, message)
     if level == "debug" then
         debugLog(message)
     elseif level == "info" then
