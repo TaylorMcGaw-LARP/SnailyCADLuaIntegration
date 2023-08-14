@@ -1,5 +1,4 @@
 
-snailycad-0.0.1.zip
 sonoranradio/data/carvariations.meta
 sonoranradio/data/vehicles.meta
 sonoranradio/dist/bundle.css
@@ -367,6 +366,5 @@ sonoranradio/static/radio-portable.png
 sonoranradio/stream/sonoran.yft
 sonoranradio/stream/sonoran.ytd
 sonoranradio/stream/sonoran_hi.yft
-sonoranradio/towers.json
-cad_tablet/*
 sonoranradio/towers - Copy.json
+sonoranradio/towers.json
