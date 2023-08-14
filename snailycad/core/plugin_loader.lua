@@ -68,7 +68,7 @@ function CheckForPluginUpdate(name, checkUrl)
     end
     print(names)
     PerformHttpRequest(plugin.check_url, function(code, data, headers)
-        
+        if code == 200 then
             local remote = json.decode(data)
             if remote == nil then
                 warnLog(("Failed to get a valid response for %s. Skipping."):format(name))
