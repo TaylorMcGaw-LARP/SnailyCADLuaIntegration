@@ -77,13 +77,3 @@ function CheckIdentifiers(id1, id2, callback, stripPrefix)
         end
     end
 end
-
-function PerformHttpRequestS(url, cb, method, data, headers)
-    if not data then
-        data = ""
-    end
-    if not headers then
-        headers = {["X-User-Agent"] = "snailyCAD"}
-    end
-    exports["snailycad"]:HandleHttpRequest(url, cb, method, data, headers)
-end
