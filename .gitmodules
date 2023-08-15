@@ -13,3 +13,6 @@
 [submodule "snailycad/plugins/wraithv2"]
 	path = snailycad/plugins/wraithv2
 	url = https://github.com/TaylorMcGaw-LARP/snaily_wraithv2
+[submodule "wk_wars2x"]
+	path = wk_wars2x
+	url = https://github.com/TaylorMcGaw-LARP/wk_wars2x
