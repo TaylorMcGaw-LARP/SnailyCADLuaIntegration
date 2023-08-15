@@ -37,7 +37,7 @@ function performApiRequest(payload, endpoint,dispatch, cb)
         return
     end
 
-        PerformHttpRequestS(url, function(statusCode, res, headers)
+        PerformHttpRequest(url, function(statusCode, res, headers)
             warnLog(("type %s called with data %s to url %s"):format(type, json.encode(payload), url))
             if statusCode == 200 and res ~= nil then
                 debugLog("result: "..tostring(res))
