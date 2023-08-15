@@ -66,9 +66,8 @@ function CheckForPluginUpdate(name, checkUrl)
         warnLog(("Plugin %s does not have check_url set. Please update it manually."):format(name))
         return
     end
-    print(names)
     PerformHttpRequest(plugin.check_url, function(code, data, headers)
-        if code == 200 then
+        
             local remote = json.decode(data)
             if remote == nil then
                 warnLog(("Failed to get a valid response for %s. Skipping."):format(name))
@@ -98,9 +97,7 @@ function CheckForPluginUpdate(name, checkUrl)
                 end
             end
             
-        else
-            errorLog(("Failed to check plugin updates for %s: %s %s"):format(name, code, data))
-        end
+     
     end, "GET")
 end
 

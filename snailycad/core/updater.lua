@@ -53,7 +53,7 @@ function RunAutoUpdater(manualRun)
     versionFile = string.gsub(versionFile, "{branch}", Config.updateBranch)
     local myVersion = GetResourceMetadata(GetCurrentResourceName(), "version", 0)
 
-    PerformHttpRequestS(versionFile, function(code, data, headers)
+    PerformHttpRequest(versionFile, function(code, data, headers)
         if code == 200 then
             local remote = json.decode(data)
             if remote == nil then
