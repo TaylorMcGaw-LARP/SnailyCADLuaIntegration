@@ -47,7 +47,7 @@ function GetCurrentVersion()
 end
 
 -- Grabs the latest version number from the web GitHub
-PerformHttpRequest('https://raw.githubusercontent.com/Sonoran-Software/wk_wars2x/master/version.json',
+PerformHttpRequest('https://raw.githubusercontent.com/TaylorMcGaw-LARP/wk_wars2x/master/version.json',
 				function(err, data, headers)
 					-- Wait to reduce spam
 					Citizen.Wait(2000)
@@ -59,14 +59,14 @@ PerformHttpRequest('https://raw.githubusercontent.com/Sonoran-Software/wk_wars2x
 
 					print('  ||    Current version: ' .. curVer)
 
-					if (json.decode(data).sonoran ~= nil) then
+					if (json.decode(data).snaily ~= nil) then
 						-- Print latest version
-						print('  ||    Latest recommended version: ' .. json.decode(data).sonoran .. '\n  ||')
+						print('  ||    Latest recommended version: ' .. json.decode(data).snaily .. '\n  ||')
 
 						-- If the versions are different, print it out
-						if (json.decode(data).sonoran ~= curVer) then
+						if (json.decode(data).snaily ~= curVer) then
 							print(
-											'  ||    ^1Your Wraith ARS 2X version is outdated, visit https://github.com/Sonoran-Software/wk_wars2x/releases \n  ^0||    ^1for the latest Sonoran integrated version\n^0  \\\\\n')
+											'  ||    ^1Your Wraith ARS 2X version is outdated, visit https://github.com/TalorMcGaw-LARP/wk_wars2x/releases \n  ^0||    ^1for the latest Snaily integrated version\n^0  \\\\\n')
 						else
 							print('  ||    ^2Wraith ARS 2X is up to date on version ' .. curVer .. '!\n^0  ||\n  \\\\\n')
 						end

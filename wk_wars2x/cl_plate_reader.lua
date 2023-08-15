@@ -284,7 +284,7 @@ function READER:Main()
 						-- Send the plate information to the NUI side to update the UI
 						SendNUIMessage( { _type = "changePlate", cam = cam, plate = plate, index = index } )
 
-						-- If we use Sonoran CAD, reduce the plate events to just player's vehicle, otherwise life as normal
+						-- If we use Snaily CAD, reduce the plate events to just player's vehicle, otherwise life as normal
 						if ( ( CONFIG.use_snailycad and ( UTIL:IsPlayerInVeh( veh ) or IsVehiclePreviouslyOwnedByPlayer( veh ) ) and GetVehicleClass( veh ) ~= 18 ) or not CONFIG.use_snailycad ) then
 							-- Trigger the event so developers can hook into the scanner every time a plate is scanned
 							TriggerServerEvent( "wk:onPlateScanned", cam, plate, index )
