@@ -20,7 +20,6 @@ end
 local function doUpdate(latest)
     -- best way to do this...
     local releaseUrl = ("https://github.com/TaylorMcGaw-LARP/SnailyCADLuaIntegration/releases/download/v%s/snailycad-%s.zip"):format(latest, latest)
-    print(releaseUrl)
     PerformHttpRequest(releaseUrl, function(code, data, headers)
         if code == 200 then
             local savePath = GetResourcePath(GetCurrentResourceName()).."/update.zip"
