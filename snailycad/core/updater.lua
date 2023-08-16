@@ -19,7 +19,8 @@ end
 
 local function doUpdate(latest)
     -- best way to do this...
-    local releaseUrl = ("https://github.com/snaily-Software/snailyCADLuaIntegration/releases/download/v%s/snailycad-%s.zip"):format(latest, latest)
+    local releaseUrl = ("https://github.com/TaylorMcGaw-LARP/SnailyCADLuaIntegration/releases/download/v%s/snailycad-%s.zip"):format(latest, latest)
+    print(releaseUrl)
     PerformHttpRequest(releaseUrl, function(code, data, headers)
         if code == 200 then
             local savePath = GetResourcePath(GetCurrentResourceName()).."/update.zip"
@@ -48,7 +49,7 @@ function RunAutoUpdater(manualRun)
     end
     local versionFile = Config.autoUpdateUrl
     if versionFile == nil then
-        versionFile = "https://raw.githubusercontent.com/snaily-Software/snailyCADLuaIntegration/{branch}/snailycad/version.json"
+        versionFile = "https://raw.githubusercontent.com/TaylorMcGaw-LARP/SnailyCADLuaIntegration/{branch}/snailycad/version.json"
     end
     versionFile = string.gsub(versionFile, "{branch}", Config.updateBranch)
     local myVersion = GetResourceMetadata(GetCurrentResourceName(), "version", 0)
@@ -65,15 +66,15 @@ function RunAutoUpdater(manualRun)
 
                 assert(localVersion ~= nil, "Failed to parse local version. "..tostring(localVersion))
                 assert(latestVersion ~= nil, "Failed to parse remote version. "..tostring(latestVersion))
-
                 if latestVersion > localVersion then
+             
                     if not Config.allowAutoUpdate then
-                        print("^3|===========================================================================|")
-                        print("^3|                        ^5snailyCAD Update Available                        ^3|")
-                        print("^3|                             ^8Current : " .. localVersion .. "                               ^3|")
-                        print("^3|                             ^2Latest  : " .. latestVersion .. "                               ^3|")
-                        print("^3| Download at: ^4https://github.com/snaily-Software/snailyCADLuaIntegration ^3|")
-                        print("^3|===========================================================================|^7")
+                        print("^3|==========================================================================|")
+                        print("^3|                ^1SnailyCADLuaIntegration Update Available                  ^3|")
+                        print("^3|                             ^8Current : " .. localVersion .. "                                ^3|")
+                        print("^3|                             ^2Latest  : " .. latestVersion .. "                                ^3|")
+                        print("^3| Download at: ^4https://github.com/TaylorMcGaw-LARP/SnailyCADLuaIntegration ^3|")
+                        print("^3|==========================================================================|^7")
                         if Config.allowAutoUpdate == nil then
                             warnLog("You have not configured the automatic updater. Please set allowAutoUpdate in config.json to allow updates.")
                         end
