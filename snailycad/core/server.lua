@@ -2,8 +2,10 @@ Plugins = {}
 
 CreateThread(function()
     Wait(1)
-    infoLog(("Loaded community ID API URL: %s"):format(Config.apiUrl))
-   
+    local myVersion = GetResourceMetadata(GetCurrentResourceName(), "version", 0)
+
+    infoLog(("Loaded Version %s with community API URL: %s"):format(myVersion,Config.apiUrl))
+  
     if Config.primaryIdentifier == "steam" and GetConvar("steam_webapiKey", "none") == "none" then
         errorLog("You have set snailyCAD to Steam mode, but have not configured a Steam Web API key. Please see FXServer documentation. snailyCAD will not function in Steam mode without this set.")
         Config.critError = true
