@@ -370,3 +370,8 @@ sonoranradio/stream/sonoran_hi.yft
 sonoranradio/towers.json
 cad_tablet/*
 sonoranradio/towers - Copy.json
+app.log
+fxproject.json
+.vscode/tasks.json
+.vscode/settings.json
+.vscode/launch.json
