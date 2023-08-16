@@ -1,9 +1,9 @@
 fx_version 'bodacious'
 games {'gta5'}
 
-author 'snaily CAD'
+author 'TaylorMcGaw-LARP'
 description 'snaily CAD FiveM Integration'
-version '2.4.0'
+version '0.0.3'
 
 server_scripts {
     'core/http.js'
