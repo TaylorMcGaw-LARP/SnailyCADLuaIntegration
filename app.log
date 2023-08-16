@@ -1,0 +1,329 @@
+Manager API Started — Running on port 30789
+Requirement NodeJS Passed
+Requirement Yarn Passed
+Requirement PSQL Passed
+Requirement GIT Passed
+Requirement Tests Complete — Checking Versions
+Manager up to date!
+Remote server is not configured!
+CAD Version up to date!
+ENV Saved
+✅ copied .env — client
+
+✅ copied .env — api
+
+• Packages in scope: @snailycad/client
+• Running build in 1 packages
+• Remote caching disabled
+
+@snailycad/permissions:build: cache miss, executing a1fe5cc70f0e9b2d
+@snailycad/schemas:build: cache miss, executing 78cc0404640f7699
+
+@snailycad/client:copy-env: cache bypass, force executing 957051c74d58a064
+@snailycad/config:build: cache miss, executing 8e1c2521ef2f8c14
+
+@snailycad/client:copy-env: ✅ copied .env — client
+
+@snailycad/types:build: cache miss, executing 86acce1b54b8b6a6
+
+@snailycad/types:build: Environment variables loaded from .env
+
+@snailycad/types:build: Prisma schema loaded from prisma\schema.prisma
+
+@snailycad/types:build: 
+
+@snailycad/types:build: ✔ Generated Prisma Client (5.1.1 | library) to .\..\..\node_modules\@prisma\client in 4.72s
+@snailycad/types:build: You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+@snailycad/types:build: ```
+@snailycad/types:build: import { PrismaClient } from '@prisma/client'
+@snailycad/types:build: const prisma = new PrismaClient()
+@snailycad/types:build: ```
+
+@snailycad/audit-logger:build: cache miss, executing 8f6ea321db7f40a6
+@snailycad/utils:build: cache miss, executing 8b20eca6b1febbbb
+
+@snailycad/audit-logger:build: Environment variables loaded from .env
+
+@snailycad/audit-logger:build: Prisma schema loaded from prisma\schema.prisma
+
+@snailycad/ui:build: cache miss, executing 3a9d95cd96760388
+
+@snailycad/audit-logger:build: 
+@snailycad/audit-logger:build: ✔ Generated Prisma Client (5.1.1 | library) to .\..\..\node_modules\@prisma\client in 4.84s
+@snailycad/audit-logger:build: You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+@snailycad/audit-logger:build: ```
+@snailycad/audit-logger:build: import { PrismaClient } from '@prisma/client'
+@snailycad/audit-logger:build: const prisma = new PrismaClient()
+@snailycad/audit-logger:build: ```
+
+@snailycad/client:build: cache miss, executing f3da4e195f03b246
+
+@snailycad/client:build: - info Loaded env from C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.env
+
+@snailycad/client:build: - info Skipping linting
+
+@snailycad/client:build: - info Checking validity of types...
+
+@snailycad/client:build: - info Creating an optimized production build...
+
+@snailycad/client:build: - info Compiled successfully
+
+@snailycad/client:build: - info Collecting page data...
+
+@snailycad/client:build: - info Generating static pages (0/10)
+
+@snailycad/client:build: In React 18, SSRProvider is not necessary and is a noop. You can remove it from your app.
+
+@snailycad/client:build: In React 18, SSRProvider is not necessary and is a noop. You can remove it from your app.
+
+@snailycad/client:build: In React 18, SSRProvider is not necessary and is a noop. You can remove it from your app.
+
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+@snailycad/client:build: - info Generating static pages (2/10)
+@snailycad/client:build: - info Generating static pages (4/10)
+@snailycad/client:build: - info Generating static pages (7/10)
+
+@snailycad/client:build: n [Error]: MISSING_MESSAGE
+@snailycad/client:build:     at I (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3186)
+@snailycad/client:build:     at y (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:3359)
+@snailycad/client:build:     at M (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\use-intl\dist\use-intl.cjs.production.min.js:1:4425)
+@snailycad/client:build:     at CitizenDropdown (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.next\server\chunks\7044.js:433:19)
+@snailycad/client:build:     at Wc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:68:44)
+@snailycad/client:build:     at Zc (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:70:253)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:89)
+@snailycad/client:build:     at $c (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:78:98)
+@snailycad/client:build:     at bd (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:77:404)
+@snailycad/client:build:     at Z (C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\node_modules\react-dom\cjs\react-dom-server.browser.production.min.js:76:217) {
+@snailycad/client:build:   code: 'MISSING_MESSAGE',
+@snailycad/client:build:   originalMessage: undefined
+@snailycad/client:build: }
+
+@snailycad/client:build: - info Generating static pages (10/10)
+
+@snailycad/client:build: - info Finalizing page optimization...
+
+@snailycad/client:build: 
+
+@snailycad/client:build: Route (pages)                                     Size     First Load JS
+
+@snailycad/client:build: ┌ λ /                                             290 B           211 kB
+
+@snailycad/client:build: ├   /_app                                         0 B             211 kB
+@snailycad/client:build: ├ λ /403                                          1.23 kB         311 kB
+@snailycad/client:build: ├ ○ /404                                          1.34 kB         311 kB
+@snailycad/client:build: ├ λ /account                                      10.7 kB         331 kB
+@snailycad/client:build: ├ λ /admin                                        3.3 kB          316 kB
+@snailycad/client:build: ├   └ css/806151f0779166fa.css                    710 B
+@snailycad/client:build: ├ λ /admin/import/citizens                        8.21 kB         378 kB
+@snailycad/client:build: ├ λ /admin/import/vehicles                        4.47 kB         389 kB
+@snailycad/client:build: ├ λ /admin/import/weapons                         4.42 kB         389 kB
+
+@snailycad/client:build: ├ λ /admin/manage/audit-logs                      11.7 kB         380 kB
+@snailycad/client:build: ├ λ /admin/manage/businesses                      12.4 kB         377 kB
+@snailycad/client:build: ├ λ /admin/manage/businesses/[id]                 11.4 kB         360 kB
+@snailycad/client:build: ├ λ /admin/manage/cad-settings                    16.7 kB         381 kB
+@snailycad/client:build: ├ λ /admin/manage/citizens                        12.9 kB         386 kB
+@snailycad/client:build: ├ λ /admin/manage/citizens/[id]                   35.8 kB         583 kB
+@snailycad/client:build: ├ λ /admin/manage/courthouse                      12.5 kB         498 kB
+@snailycad/client:build: ├ λ /admin/manage/custom-fields                   13.7 kB         418 kB
+@snailycad/client:build: ├ λ /admin/manage/custom-roles                    9.89 kB         440 kB
+@snailycad/client:build: ├ λ /admin/manage/units                           13.9 kB         385 kB
+@snailycad/client:build: ├ λ /admin/manage/units/[id]                      17.1 kB         444 kB
+@snailycad/client:build: ├ λ /admin/manage/users                           11.4 kB         364 kB
+@snailycad/client:build: ├ λ /admin/manage/users/[id]                      14 kB           388 kB
+@snailycad/client:build: ├ λ /admin/values/[path]                          7.75 kB         500 kB
+@snailycad/client:build: ├ λ /admin/values/penal-code                      9.14 kB         502 kB
+@snailycad/client:build: ├ λ /admin/values/penal-code/[groupId]            9.81 kB         502 kB
+@snailycad/client:build: ├ λ /api-docs                                     581 B           235 kB
+@snailycad/client:build: ├ λ /auth/account-password                        17.3 kB         309 kB
+@snailycad/client:build: ├ λ /auth/connections                             7.24 kB         237 kB
+@snailycad/client:build: ├ λ /auth/login                                   20.8 kB         326 kB
+@snailycad/client:build: ├ λ /auth/pending                                 6.97 kB         237 kB
+@snailycad/client:build: ├ λ /auth/register                                17.2 kB         321 kB
+@snailycad/client:build: ├ λ /auth/temp-password                           17.4 kB         309 kB
+@snailycad/client:build: ├ λ /bleeter                                      915 B           396 kB
+@snailycad/client:build: ├ λ /bleeter/[id]                                 7.92 kB         383 kB
+@snailycad/client:build: ├ λ /bleeter/@/[handle]                           6.97 kB         443 kB
+@snailycad/client:build: ├ λ /business                                     2.57 kB         312 kB
+@snailycad/client:build: ├ λ /business/[id]/[employeeId]                   9.34 kB         384 kB
+@snailycad/client:build: ├ λ /business/[id]/[employeeId]/manage            19.6 kB         417 kB
+@snailycad/client:build: ├ λ /citizen                                      7.86 kB         321 kB
+@snailycad/client:build: ├ λ /citizen/[id]                                 30.6 kB         531 kB
+@snailycad/client:build: ├ λ /citizen/[id]/edit                            32.2 kB         579 kB
+@snailycad/client:build: ├ λ /citizen/create                               32.4 kB         579 kB
+@snailycad/client:build: ├ λ /courthouse                                   20.5 kB         515 kB
+@snailycad/client:build: ├ λ /dispatch                                     22.5 kB         592 kB
+@snailycad/client:build: ├ λ /dispatch/map                                 2.72 kB         312 kB
+@snailycad/client:build: ├ λ /ems-fd                                       4.67 kB         609 kB
+@snailycad/client:build: ├ λ /ems-fd/hospital-services                     9.82 kB         368 kB
+@snailycad/client:build: ├ λ /ems-fd/incidents                             960 B           424 kB
+@snailycad/client:build: ├ λ /ems-fd/my-deputies                           1.81 kB         356 kB
+@snailycad/client:build: ├ λ /ems-fd/my-deputy-logs                        1.89 kB         379 kB
+@snailycad/client:build: ├ λ /officer                                      10.2 kB         614 kB
+@snailycad/client:build: ├ λ /officer/bureau-of-firearms                   9.1 kB          354 kB
+@snailycad/client:build: ├ λ /officer/call-history                         24.5 kB         557 kB
+@snailycad/client:build: ├ λ /officer/dmv                                  9.18 kB         355 kB
+@snailycad/client:build: ├ λ /officer/impound-lot                          7.37 kB         372 kB
+@snailycad/client:build: ├ λ /officer/incidents                            1.1 kB          424 kB
+@snailycad/client:build: ├ λ /officer/jail                                 44.4 kB         541 kB
+@snailycad/client:build: ├ λ /officer/my-officer-logs                      1.86 kB         379 kB
+@snailycad/client:build: ├ λ /officer/my-officers                          2.16 kB         357 kB
+@snailycad/client:build: ├ λ /officer/penal-codes                          13.1 kB         400 kB
+@snailycad/client:build: ├ λ /officer/supervisor/citizen-logs              21.5 kB         497 kB
+@snailycad/client:build: ├ λ /officer/supervisor/citizen-logs/[citizenId]  9.18 kB         429 kB
+@snailycad/client:build: ├ λ /officer/supervisor/dl-exams                  310 B           211 kB
+@snailycad/client:build: ├ λ /officer/supervisor/exams                     25.9 kB         522 kB
+@snailycad/client:build: ├ λ /pets                                         2.23 kB         455 kB
+@snailycad/client:build: ├ λ /pets/[id]                                    6.81 kB         459 kB
+@snailycad/client:build: ├ λ /taxi                                         659 B           422 kB
+@snailycad/client:build: ├ λ /tow                                          662 B           422 kB
+@snailycad/client:build: ├ λ /tow/logs                                     7.33 kB         421 kB
+@snailycad/client:build: └ λ /truck-logs                                   8.64 kB         354 kB
+@snailycad/client:build: + First Load JS shared by all                     223 kB
+@snailycad/client:build:   ├ chunks/framework-d15d2adb749722aa.js          45.3 kB
+@snailycad/client:build:   ├ chunks/main-e7e3c6bdd45992b7.js               33.4 kB
+@snailycad/client:build:   ├ chunks/pages/_app-4519c469287a630c.js         127 kB
+@snailycad/client:build:   ├ chunks/webpack-d91beae643efb6f0.js            5.25 kB
+@snailycad/client:build:   └ css/997a2824dd26fbc4.css                      12 kB
+@snailycad/client:build: 
+@snailycad/client:build: λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+@snailycad/client:build: ○  (Static)  automatically rendered as static HTML (uses no initial props)
+@snailycad/client:build: 
+
+
+ Tasks:    9 successful, 9 total
+Cached:    0 cached, 9 total
+  Time:    5m35.427s 
+
+
+...writing to cache...
+
+[0] - ready started server on 0.0.0.0:3000, url: http://localhost:3000
+
+[1] Environment variables loaded from .env
+
+[1] 
+Prisma schema loaded from prisma\schema.prisma
+
+[0] 
+- [36minfo[39m Loaded env from C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.env
+
+[0] - [36minfo[39m Loaded env from C:\Users\Administrator\Documents\SnailyCad CAD\snaily-cadv4\apps\client\.env
+
+[1] 
+
+[1] ✔ Generated Prisma Client (5.1.1 | library) to .\..\..\node_modules\@prisma\client in 4.85s
+[1] You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+[1] ```
+[1] import { PrismaClient } from '@prisma/client'
+[1] const prisma = new PrismaClient()
+[1] ```
+
+[1] Environment variables loaded from .env
+
+[1] Prisma schema loaded from prisma\schema.prisma
+
+[1] Datasource "db": PostgreSQL database "snaily-cad-v4", schema "public" at "localhost:5432"
+
+[1] 
+
+[1] Error: P1000: Authentication failed against database server at `localhost`, the provided database credentials for `Gizmo` are not valid.
+[1] 
+[1] Please make sure to provide valid database credentials for the database server at `localhost`.
+
+[1] 
+yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start exited with code 1
+
+
+SUCCESS: The process with PID 10412 has been terminated.
+
+[0] yarn workspace @snailycad/client start exited with code 1
+
+
+
+CAD Process exited with code 1
+Launching URL: C:\Users\Administrator\AppData\Local\Programs\SnailyCAD Manager\resources\logs\app.log
