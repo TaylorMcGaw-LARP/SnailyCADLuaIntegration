@@ -1,18 +1,21 @@
+[submodule "wk_wars2x"]
+	path = wk_wars2x
+	url = https://github.com/TaylorMcGaw-LARP/wk_wars2x
+[submodule "snailycad/plugins/trafficstop"]
+	path = snailycad/plugins/trafficstop
+	url = https://github.com/TaylorMcGaw-LARP/snaily_trafficstop
 [submodule "snailycad/plugins/callcommands"]
 	path = snailycad/plugins/callcommands
 	url = https://github.com/TaylorMcGaw-LARP/snaily_callcommands
+[submodule "snailycad/plugins/frameworksupport"]
+	path = snailycad/plugins/frameworksupport
+	url = https://github.com/TaylorMcGaw-LARP/snaily_frameworksupport
+[submodule "snailycad/plugins/wraithv2"]
+	path = snailycad/plugins/wraithv2
+	url = https://github.com/TaylorMcGaw-LARP/snaily_wraithv2
 [submodule "snailycad/plugins/postals"]
 	path = snailycad/plugins/postals
 	url = https://github.com/TaylorMcGaw-LARP/snaily_postals
 [submodule "snailycad/plugins/locations"]
 	path = snailycad/plugins/locations
 	url = https://github.com/TaylorMcGaw-LARP/snaily_locations
-[submodule "snailycad/plugins/trafficstop"]
-	path = snailycad/plugins/trafficstop
-	url = https://github.com/TaylorMcGaw-LARP/snaily_trafficstop
-[submodule "snailycad/plugins/wraithv2"]
-	path = snailycad/plugins/wraithv2
-	url = https://github.com/TaylorMcGaw-LARP/snaily_wraithv2
-[submodule "wk_wars2x"]
-	path = wk_wars2x
-	url = https://github.com/TaylorMcGaw-LARP/wk_wars2x
